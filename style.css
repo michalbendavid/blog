@@ -3,3 +3,16 @@
 body{
     background-color: rgb(228, 224, 224);
 }
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #801446;
+    color: white;
+    font-size: 30px;
+}
+
+ul > li {
+    list-style: none;
+}
+
