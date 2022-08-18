@@ -1,8 +1,11 @@
 /* css for posts */
-main {
+.post-page-container {
     display: grid;
     padding: 2rem;
-    grid-template-columns: 300px 1fr;
+    grid:10% 80% 10% / 40% 40% 20%;
+    grid-template-areas:
+        "firstPost secondPost"
+        "thirdPost forthPost";
     gap: 1rem;
     align-items: center;
     max-width: 800px;
@@ -10,10 +13,45 @@ main {
     font: 500 100%/1.5 system-ui;
 }
 
-.post-img {
-    max-width: 100%;
-    height: auto;
+.header {
+    grid-area: "header";
 }
+
+.blog-card {
+    
+}
+
+.post-img {
+    max-width: 50%;
+    height: auto;
+    display: inline-block; */
+}
+
+
+.first-post {
+    grid-area: firstPost;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+
+#what-was-missing {
+    grid-area: secondPost;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+#what-can-i-do {
+    grid-area: thirdPost;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#in-conclusion {
+    grid-area: forthPost;
+    /* display: flex;
+    flex-wrap: wrap;
+} */
 
 @media (max-width: 650px) {
   main {
