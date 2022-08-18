@@ -1,18 +1,33 @@
 @import "drawingsGalleyStyle.css";
 
-body{
-    background-color: rgb(228, 224, 224);
-}
-
 .header {
-    padding: 60px;
-    text-align: center;
+    height: 70px;
+    padding: 0;
+    text-align:right;
     background: #801446;
-    color: white;
-    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
-ul > li {
-    list-style: none;
+/* css for header items */
+a {color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 25px;
 }
+
+
+i {
+    font-style: italic;
+}
+
+em {
+    font-weight: bold;
+}
+
+ ul > li {
+    display: inline-block;
+    list-style: none;
+    
+ }
 
