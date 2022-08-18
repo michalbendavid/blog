@@ -1,4 +1,14 @@
 /* css for header */
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "cardImg sidebar author"
+        "card sidebar author"
+        "footer footer footer";
+}
+
+
 .header {
     height: 70px;
     padding: 0;
@@ -6,6 +16,7 @@
     background: #801446;
     display: flex;
     justify-content: space-between;
+    grid-area: header;
 }
 
 /* css for logo */
@@ -36,13 +47,28 @@ button.signup {
 /* css for blog-card */
 .blog-card {
     font-size: 1.2em;
-    display: flex;
-    flex-wrap: wrep;
-}
-
+    grid-area: card;
+    display: inline-block;
+    justify-content: center;
+}     
 
 .card-img {
-    /* width: 85%;
-    height: 50% ; */
     justify-content: center;
+    grid-area: cardImg;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: inline-block;
+    justify-content: center;
+}
+
+.author-details {
+    grid-area: author;
+    display: inline-block;
+    justify-content: center;
+}
+
+.footer {
+    grid-area: footer;
 }
