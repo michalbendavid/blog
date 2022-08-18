@@ -1,5 +1,6 @@
 @import "drawingsGalleyStyle.css";
 @import "postStyle.css";
+@import "homePage.css"
 
 body {
     font-family: 'Times New Roman', Times, serif;
