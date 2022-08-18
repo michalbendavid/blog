@@ -1,5 +1,18 @@
 @import "drawingsGalleyStyle.css";
 
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+h1,h2,h3 {
+    color: #801446;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* css for header */
 .header {
     height: 70px;
     padding: 0;
@@ -9,9 +22,17 @@
     justify-content: space-between;
 }
 
+/* css for logo */
+.logo {
+    color: #bd5a89; 
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;   
+}
+
 /* css for links */
-a {color: blue;
-    font-family: 'Times New Roman', Times, serif;
+a {
+    color: rgb(32, 32, 224);
     font-size: 20px;
     padding: 25px;
 }
@@ -22,18 +43,30 @@ button.signup {
     background-color: #bd5a89;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 40vw;
 }
 
+/* css for blog-card */
+.blog-card {
 
+}
 
+/* css for spacial html semanticl tags */
 i {
     font-style: italic;
 }
 
+
 em {
     font-weight: bold;
 }
+
+
+q {
+    color:#801446;
+    font-size: 1.8em;
+ }
+
 
  ul > li {
     display: inline-block;
