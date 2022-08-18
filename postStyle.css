@@ -1,57 +1,73 @@
 /* css for posts */
-.post-page-container {
+body {
     display: grid;
     padding: 2rem;
-    grid:10% 80% 10% / 40% 40% 20%;
+    grid:10% 20% 30% 30% 10% / 40% 40% 20%;
     grid-template-areas:
-        "firstPost secondPost"
-        "thirdPost forthPost";
-    gap: 1rem;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    font: 500 100%/1.5 system-ui;
-}
+        "header header header"
+        "blogCard blogCard blogCard"
+        "main main sidbar"
+        "main main autour "
+        "footer footer footer";
+ }
 
 .header {
-    grid-area: "header";
+    grid-area: header;
 }
 
 .blog-card {
-    
+    grid-area:blogCard ;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
 }
 
 .post-img {
     max-width: 50%;
     height: auto;
-    display: inline-block; */
+    display: inline-block; 
 }
 
 
 .first-post {
     grid-area: firstPost;
+
     /* display: flex;
     flex-wrap: wrap; */
 }
 
 
-#what-was-missing {
+.second-post {
     grid-area: secondPost;
     /* display: flex;
     flex-wrap: wrap; */
 }
 
-#what-can-i-do {
-    grid-area: thirdPost;
-    display: flex;
-    flex-wrap: wrap;
+.third-post {
+     grid-area: thirdPost;
 }
 
-#in-conclusion {
+.forth-post {
     grid-area: forthPost;
     /* display: flex;
-    flex-wrap: wrap;
-} */
+    flex-wrap: wrap; */
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.author-details {
+    grid-area: author;
+}
+
+.footer {
+    grid-area: footer;
+}
 
 @media (max-width: 650px) {
   main {
@@ -63,6 +79,5 @@
         position: relative;
         margin: -3rem 0 2rem 1rem;
         padding: 1rem;
-        background: rgba(white, 0.8);
     }
 }
