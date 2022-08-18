@@ -37,9 +37,10 @@ h1,h2,h3 {
 
 /* css for links */
 a {
-    color: rgb(32, 32, 224);
-    font-size: 20px;
+    color:#bd5a89;
+    font-size: 25px;
     padding: 25px;
+    font-style: italic;
 }
 
 /* css for signup buttons */

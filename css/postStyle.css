@@ -41,7 +41,8 @@ article {
     max-width: 50%;
     height: auto;
     flex: 0 0 150px;
-    display: ; 
+    display: flex;
+    flex-wrap: wrap; 
 }
 
 
