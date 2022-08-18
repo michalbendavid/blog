@@ -9,12 +9,22 @@
     justify-content: space-between;
 }
 
-/* css for header items */
+/* css for links */
 a {color: blue;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     padding: 25px;
 }
+
+/* css for signup buttons */
+button.signup {
+    padding: 2px 6px;
+    background-color: #bd5a89;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
 
 
 i {
