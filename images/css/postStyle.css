@@ -1,5 +1,5 @@
 /* css for posts */
-body {
+/* body {
     display: grid;
     padding: 2rem;
     grid:10% 20% 30% 30% 10% / 40% 40% 20%;
@@ -8,8 +8,8 @@ body {
         "blogCard blogCard blogCard"
         "main main sidbar"
         "main main autour "
-        "footer footer footer";
- }
+        "footer footer footer"; */
+ /* } */
 
 .header {
     grid-area: header;
@@ -24,12 +24,24 @@ main {
    justify-content: center;
    align-items: center;
    min-height: 100vh;
+   position: relative;
+   width: 1000px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+article {
+    position: relative;
+    display: flex;
 }
 
 .post-img {
     max-width: 50%;
     height: auto;
-    display: inline-block; 
+    flex: 0 0 150px;
+    display: ; 
 }
 
 
