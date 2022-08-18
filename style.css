@@ -48,7 +48,13 @@ button.signup {
 
 /* css for blog-card */
 .blog-card {
+    font-size: 1.2em;
+}
 
+
+.card-img {
+    width: 85%;
+    height: 50% ;
 }
 
 /* css for spacial html semanticl tags */
