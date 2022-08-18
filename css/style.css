@@ -1,11 +1,10 @@
 @import "drawingsGalleyStyle.css";
 @import "postStyle.css";
-@import "homePage.css"
+@import "homePage.css";
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    border: solid 2px ;
-}
+ }
 
 main, footer, header, aside, nav, img, section, article, div {
     border: solid 2px;
