@@ -1,11 +1,13 @@
 .blog-container {
   display: grid;
   padding: 0;
-  grid-template-columns: "column column";
-  grid-template-rows: "row row";
+  grid-template-columns: "column column column";
+  grid-template-rows: "row row row row";
   grid-template-areas:
-    "firstPost postImg1"
-    "secondPost postImg2";
+    "header header header"
+    "firstPost firstPost postImg1"
+    "secondPost secondPost postImg2"
+    "footer footer author";
   gap: 20px;
 }
 
@@ -54,7 +56,9 @@
   .first-post,
   .second-post,
   .post-img-one,
-  .post-img-two {
+  .post-img-two,
+  .blog-container,
+  .author-details {
     display: block;
     margin: 0 auto;
     width: fit-content;
