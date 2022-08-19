@@ -1,27 +1,31 @@
 .blog-container {
   display: grid;
   padding: 0;
-  grid-template-columns: "column";
-  grid-template-rows: "row";
-  /* grid-template-areas:
-    "postImg1 secondPost"
-    "firstPost postImg2"; */
+  grid-template-columns: "column column";
+  grid-template-rows: "row row";
+  grid-template-areas:
+    "postImg1 firstPost"
+    "secondPost postImg2";
 }
 
 .first-post {
   grid-area: firstPost;
+  display: flex;
 }
 
 .second-post {
   grid-area: secondPost;
+  display: flex;
 }
 
 .post-img-one {
   grid-area: postImg1;
+  display: flex;
 }
 
 .post-img-two {
   grid-area: postImg2;
+  display: flex;
 }
 
 @media (max-width: 650px) {
