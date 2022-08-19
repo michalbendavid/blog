@@ -1,24 +1,17 @@
-/* css for posts */
-/* body {
+ .blog-container {
     display: grid;
-    padding: 2rem;
-    grid:10% 20% 30% 30% 10% / 40% 40% 20%;
+    padding: 0;
+    grid: 50% 50% / 50% 50%;
     grid-template-areas:
-        "header header header"
-        "blogCard blogCard blogCard"
-        "main main sidbar"
-        "main main autour "
-        "footer footer footer"; */
- /* } */
+        "postImg1 firstPost"
+        "postImg2 secondPost"
+        "postImg3 thirdPost"
+        "postImg4 forthPost";
 
-.header {
-    grid-area: header;
-}
+    gap: 20px;
+ }
 
-.blog-card {
-    grid-area:blogCard ;
-}
-
+/* 
 main {
    display: flex;
    justify-content: center;
@@ -30,57 +23,59 @@ main {
    justify-content: space-between;
    align-items: center;
    flex-wrap: wrap;
-}
+} */
 
-article {
-    position: relative;
-    display: flex;
-}
-
-.post-img {
-    max-width: 50%;
+.post-img-one,
+.post-img-two,
+.post-img-tree,
+.post-img-four {
+    width: 40%;
     height: auto;
-    flex: 0 0 150px;
-    display: flex;
-    flex-wrap: wrap; 
+    /* flex: 0 0 150px; */
+    /* display: flex;
+    flex-wrap: wrap;  */
 }
 
 
 .first-post {
     grid-area: firstPost;
-
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 
 
 .second-post {
     grid-area: secondPost;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
+
 
 .third-post {
      grid-area: thirdPost;
 }
 
+
 .forth-post {
     grid-area: forthPost;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 
-.sidebar {
-    grid-area: sidebar;
+
+.post-img-one {
+    grid-area: postImg1;
 }
 
-.author-details {
-    grid-area: author;
+
+.post-img-two {
+    grid-area: postImg2;
+}
+ 
+
+.post-img-tree {
+    grid-area: postImg3;
 }
 
-.footer {
-    grid-area: footer;
+
+.post-img-four {
+    grid-area: postImg4;
 }
+
 
 @media (max-width: 650px) {
   main {
