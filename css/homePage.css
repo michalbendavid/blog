@@ -1,4 +1,4 @@
-/* css for header */
+
 .container {
     display: grid;
     grid-template-areas: 
@@ -9,17 +9,19 @@
     gap: 20px;
 }
 
-/* css for blog-card */
+
 .blog-card {
     grid-area: card;
     font-size: 1.2em;
 }     
+ 
 
 .card-img {
     grid-area: cardImg;
     display:flex;
     justify-content:center;
 }
+
 
 .sidebar , .author-details{
     grid-area: sidebar;
@@ -28,18 +30,20 @@
     line-height: 4em;
     background-color: rgb(58, 56, 56);
     height: fit-content;
-   
     padding: 10px;
  }
+
 
 .author-details, .sidebar-list {
     list-style: circle;
     text-align: left;
 }
 
+
 .author-details {
     grid-area: author;
 }  
+
 
 .avatar {
     width: 50px;
@@ -47,23 +51,20 @@
     border-radius: 50%;
 }
 
-/* .header, .footer {
-   
-    padding: 0;
-    font-size: 1.2em;
-}   */
 
 .header {
     grid-area: header;
     height: 70px;
     background: #801446;
 }
+ 
 
 .footer {
     grid-area: footer;
     height: 60px;
     background-color: lightsteelblue;
  } 
+
 
  .footer,
  .header,
@@ -79,13 +80,13 @@
    
  } 
 
+
 .footer-items,
 .header-items {
     column-gap: 30px;
 }
 
 
- /* css for logo */
  .logo {
      color: #bd5a89;
      font-size: 30px;
@@ -93,14 +94,14 @@
      font-weight: bolder;
  }
 
- /* css for links */
+
  a {
      color: #bd5a89;
      font-size: 1.2em;
      font-style: italic;
  }
 
- /* css for signup buttons */
+ 
  button.signup {
      padding: 1px 4px;
      background-color: #bd5a89;
@@ -130,5 +131,5 @@
          column-gap: 20px ;
          text-align: center;
      }
-        
+     
  }
