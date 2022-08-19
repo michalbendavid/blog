@@ -9,50 +9,10 @@
     gap: 20px;
 }
 
-
-.header {
-    height: 70px;
-    padding: 0;
-    text-align: center;
-    background: #801446;
-    display: flex;
-    justify-content: space-between;
-    grid-area: header;
-}
-
-/* css for logo */
-.logo {
-    color: #bd5a89;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: bolder;
-}
-
-/* css for links */
-a {
-    color: #bd5a89;
-    font-size: 25px;
-    padding: 25px;
-    font-style: italic;
-}
-
-/* css for signup buttons */
-button.signup {
-    padding: 2px 6px;
-    background-color: #bd5a89;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    margin-left: 40vw;
-}
-
 /* css for blog-card */
 .blog-card {
     grid-area: card;
     font-size: 1.2em;
-    
-    display: flex;
-    position: relative;
-    justify-content: left;
 }     
 
 .card-img {
@@ -61,34 +21,79 @@ button.signup {
     justify-content:center;
 }
 
-.sidebar {
+.sidebar , .author-details{
     grid-area: sidebar;
+    color: #bd5a89;
     font-size: 1.2em;
-    line-height: 1.5em;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
-    justify-content: left;
-    background-color: rgb(65, 56, 56);
+    line-height: 4em;
+    background-color: rgb(58, 56, 56);
+    height: fit-content;
+    padding: 10px;
+ }
+
+.author-details, .sidebar-list {
+    list-style: circle;
+    text-align: left;
 }
-
-
 
 .author-details {
     grid-area: author;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: left;
+}  
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
+
+.header, .footer {
+    grid-area: header;
+    height: 70px;
+    padding: 0;
+    /* text-align: center; */
+    background: #801446;
+    /* justify-content: space-between; */
+}   
 
 .footer {
     grid-area: footer;
+    padding: 0;
     font-size: 25px;
-    display: flex;
     height: 100px;
     background-color: lightsteelblue;
-    text-align: center;
-}
+  
+} 
+
+ .footer,
+ .header,
+ .footer-items,
+ .header-items {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: justify;
+    justify-content: space-between;
+ }
+ /* css for logo */
+ .logo {
+     color: #bd5a89;
+     font-size: 30px;
+     font-style: italic;
+     font-weight: bolder;
+ }
+
+ /* css for links */
+ a {
+     color: #bd5a89;
+     font-size: 1.2em;
+     font-style: italic;
+ }
+
+ /* css for signup buttons */
+ button.signup {
+     padding: 2px 4px;
+     background-color: #bd5a89;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 20px;
+     
+ }

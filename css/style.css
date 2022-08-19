@@ -6,7 +6,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
  }
 
-main, footer, header, aside, nav, img, section, article, div {
+main, footer, header, aside, ul, img, section, article, div {
     border: solid 2px;
 }
 
@@ -34,20 +34,6 @@ button.signup {
     margin-left: 40vw;
 }
 
-/* css for blog-card */
-.blog-card {
-    font-size: 1.2em;
-    display: flex;
-    flex-wrap: wrep;
-}
-
-
-.card-img {
-    /* width: 85%;
-    height: 50% ; */
-    justify-content:center;
-}
-
 /* css for spacial html semanticl tags */
 i {
     font-style: italic;
@@ -65,8 +51,5 @@ q {
  }
 
 
- ul > li {
-    display: inline-block;
-    list-style: none;    
- }
+
 
