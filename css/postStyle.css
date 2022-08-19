@@ -6,37 +6,51 @@
   grid-template-areas:
     "postImg1 firstPost"
     "secondPost postImg2";
+  gap; 10px;
 }
 
 .first-post {
   grid-area: firstPost;
-  display: flex;
+  font-size: 1.2em;
 }
 
 .second-post {
   grid-area: secondPost;
-  display: flex;
+  font-size: 1.2em;
 }
 
 .post-img-one {
   grid-area: postImg1;
-  display: flex;
 }
 
+.post-img-one img {
+  width: 50vw;
+}
 .post-img-two {
   grid-area: postImg2;
-  display: flex;
 }
 
-@media (max-width: 650px) {
-  main {
-    display: block;
+.post-img-two img {
+  width: 50vw;
+}
+
+@media (max-width: 800px) {
+ .blog-container {
+    display: unset;
     font-size: 80%;
   }
 
-  main > p {
+  .blog-container > p {
     position: relative;
     margin: -3rem 0 2rem 1rem;
     padding: 1rem;
   }
+
+ .first-post,
+ .second-post, 
+ .post-img-one, 
+ .post-img-two {
+   display: block;
+}
+
 }
