@@ -49,6 +49,7 @@ button.signup {
 .blog-card {
     grid-area: card;
     font-size: 1.2em;
+    
     display: flex;
     position: relative;
     justify-content: left;
@@ -63,12 +64,12 @@ button.signup {
 .sidebar {
     grid-area: sidebar;
     font-size: 1.2em;
+    line-height: 1.5em;
     /* display: flex; */
-    flex-direction: column;
+    /* flex-direction: column; */
     /* flex-wrap: wrap; */
     justify-content: left;
     background-color: rgb(65, 56, 56);
-
 }
 
 
@@ -76,6 +77,7 @@ button.signup {
 .author-details {
     grid-area: author;
     font-size: 1.2em;
+    line-height: 1.5em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
