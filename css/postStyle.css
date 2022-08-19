@@ -1,91 +1,38 @@
- .blog-container {
-    display: grid;
-    padding: 0;
-    grid: 50% 50% / 50% 50%;
-    grid-template-areas:
-        "postImg1 firstPost"
-        "postImg2 secondPost"
-        "postImg3 thirdPost"
-        "postImg4 forthPost";
-
-    gap: 20px;
- }
-
-/* 
-main {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
-   position: relative;
-   width: 1000px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
-} */
-
-.post-img-one,
-.post-img-two,
-.post-img-tree,
-.post-img-four {
-    width: 40%;
-    height: auto;
-    /* flex: 0 0 150px; */
-    /* display: flex;
-    flex-wrap: wrap;  */
+.blog-container {
+  display: grid;
+  padding: 0;
+  grid-template-columns: "column";
+  grid-template-rows: "row";
+  /* grid-template-areas:
+    "postImg1 secondPost"
+    "firstPost postImg2"; */
 }
-
 
 .first-post {
-    grid-area: firstPost;
+  grid-area: firstPost;
 }
-
 
 .second-post {
-    grid-area: secondPost;
+  grid-area: secondPost;
 }
-
-
-.third-post {
-     grid-area: thirdPost;
-}
-
-
-.forth-post {
-    grid-area: forthPost;
-}
-
 
 .post-img-one {
-    grid-area: postImg1;
+  grid-area: postImg1;
 }
-
 
 .post-img-two {
-    grid-area: postImg2;
+  grid-area: postImg2;
 }
- 
-
-.post-img-tree {
-    grid-area: postImg3;
-}
-
-
-.post-img-four {
-    grid-area: postImg4;
-}
-
 
 @media (max-width: 650px) {
   main {
-        display: block;
-        font-size: 80%;
-    }
+    display: block;
+    font-size: 80%;
+  }
 
-   main > p {
-        position: relative;
-        margin: -3rem 0 2rem 1rem;
-        padding: 1rem;
-    }
+  main > p {
+    position: relative;
+    margin: -3rem 0 2rem 1rem;
+    padding: 1rem;
+  }
 }
