@@ -4,37 +4,42 @@
   grid-template-columns: "column column";
   grid-template-rows: "row row";
   grid-template-areas:
-    "postImg1 firstPost"
+    "firstPost postImg1"
     "secondPost postImg2";
-  gap: 10px;
+  gap: 20px;
 }
 
 .first-post {
   grid-area: firstPost;
-  font-size: 1.2em;
 }
 
 .second-post {
   grid-area: secondPost;
-  font-size: 1.2em;
 }
 
 .post-img-one {
   grid-area: postImg1;
 }
 
-.post-img-one img {
-  width: 50vw;
-}
 .post-img-two {
   grid-area: postImg2;
+}
+
+.first-post,
+.second-post {
+  font-size: 1.5em;
+  width: fit-content;
+}
+
+.post-img-one img {
+  width: 50vw;
 }
 
 .post-img-two img {
   width: 50vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .blog-container {
     display: unset;
     font-size: 80%;
@@ -51,5 +56,9 @@
   .post-img-one,
   .post-img-two {
     display: block;
+    margin: 0 auto;
+    width: fit-content;
+    column-gap: 20px;
+    text-align: left;
   }
 }
