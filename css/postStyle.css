@@ -6,7 +6,7 @@
   grid-template-areas:
     "postImg1 firstPost"
     "secondPost postImg2";
-  gap; 10px;
+  gap: 10px;
 }
 
 .first-post {
@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 800px) {
- .blog-container {
+  .blog-container {
     display: unset;
     font-size: 80%;
   }
@@ -46,11 +46,10 @@
     padding: 1rem;
   }
 
- .first-post,
- .second-post, 
- .post-img-one, 
- .post-img-two {
-   display: block;
-}
-
+  .first-post,
+  .second-post,
+  .post-img-one,
+  .post-img-two {
+    display: block;
+  }
 }
